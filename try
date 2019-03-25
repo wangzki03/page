@@ -1,0 +1,41 @@
+<h1 style="text-align: center;"><span style="color: #ff0000;"><strong>PRIVATE SSH ACCOUNT&nbsp;</strong></span></h1>
+<p style="text-align: center;"><strong><span style="background-color: #00ff00;">NO DDOS</span><span style="background-color: #ffff00;">NO HACKING</span><span style="background-color: #ffcc00;">NO TORRENT</span></strong><span style="background-color: #ff99cc;"><strong>NO MULTI LOGIN</strong></span></p>
+<p style="text-align: center;"><strong><span style="background-color: #00ffff;">99.9% UPTIME</span><span style="background-color: #ff00ff;">100% SUPPORT</span></strong></p>
+<p style="text-align: center;"><span style="background-color: #ff0000;"><strong>100% PRIVATE SERVER</strong></span></p>
+
+
+<section id="#login">
+    <div class="container">
+        <div class="row ver-parent">
+            <div class="col-md-4 col-md-offset-4 ver-center">
+                <check if="{{ @message }}">
+                    <div class="alert alert-{{ @message['type'] }}">{{ @message['data'] }}</div>
+                </check>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-sign-in fa-fw"></i>Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" action="/login" method="POST">
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                        <input class="form-control" placeholder="Username" name="username" type="text" autofocus required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                        <input class="form-control" placeholder="Password" name="password" type="password" required>
+                                    </div>
+                                </div>
+                                <button class="btn btn-lg btn-success btn-block">Login</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
