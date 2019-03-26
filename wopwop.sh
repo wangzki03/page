@@ -30,16 +30,17 @@ sudo apt-get install openvpn -y
 wait
 apt-get install unzip
 wait
+cd /etc/openvpn/
+wait
 wget https://raw.githubusercontent.com/wangzki03/page/master/config.zip
 unzip config.zip
 wait
 rm .zip*
 wait
-cp -r config/* /etc/openvpn
 wait
-cd /etc/openvpn/easy-rsa/2.0/
+cd /etc/openvpn/
 wait
-chmod -R 777 /etc/openvpn/easy-rsa/2.0/
+chmod -R 777 /etc/openvpn/
 cd
 wait
 echo "
