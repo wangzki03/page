@@ -35,13 +35,13 @@ apt-get update;apt-get -y install wget curl;
 # set time GMT +8
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 
-# set repo
+# set rep
 cat > /etc/apt/sources.list <<END2
-deb http://security.debian.org/ jessie/updates main contrib non-free
-deb-src http://security.debian.org/ jessie/updates main contrib non-free
-deb http://http.us.debian.org/debian jessie main contrib non-free
-deb http://packages.dotdeb.org jessie all
-deb-src http://packages.dotdeb.org jessie all
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb-src http://security.debian.org/ stretch/updates main contrib non-free
+deb http://http.us.debian.org/debian stretch main contrib non-free
+deb http://packages.dotdeb.org stretch all
+deb-src http://packages.dotdeb.org atretch all
 END2
 wget "http://www.dotdeb.org/dotdeb.gpg"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
