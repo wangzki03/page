@@ -107,8 +107,8 @@ service nginx restart
 apt-get -y install zip unzip
 cd /home/vps/public_html
 wget https://raw.githubusercontent.com/wangzki03/page/master/ocsv2.zip
-unzip EZ.zip
-rm -f EZ.zip
+unzip ocsv2.zip
+rm -f ocsv2.zip
 chown -R www-data:www-data /home/vps/public_html
 chmod -R g+rw /home/vps/public_html
 
